@@ -1,0 +1,241 @@
+%
+% This is the LaTeX template file for lecture notes for CS294-8,
+% Computational Biology for Computer Scientists.  When preparing 
+% LaTeX notes for this class, please use this template.
+%
+% To familiarize yourself with this template, the body contains
+% some examples of its use.  Look them over.  Then you can
+% run LaTeX on this file.  After you have LaTeXed this file then
+% you can look over the result either by printing it out with
+% dvips or using xdvi.
+%
+% This template is based on the template for Prof. Sinclair's CS 270.
+
+\documentclass[twoside]{article}
+
+\usepackage{ctex,hyperref}% 输出汉字
+
+%\usepackage{graphics}
+%\setlength{\oddsidemargin}{0.25 in}
+%\setlength{\evensidemargin}{-0.25 in}
+%\setlength{\topmargin}{-0.6 in}
+%\setlength{\textwidth}{6.5 in}
+%\setlength{\textheight}{8.5 in}
+%\setlength{\headsep}{0.75 in}
+%\setlength{\parindent}{0 in}
+%\setlength{\parskip}{0.1 in}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\thelecnum-\arabic{page}}
+\renewcommand{\thesection}{\thelecnum.\arabic{section}}
+\renewcommand{\theequation}{\thelecnum.\arabic{equation}}
+\renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
+\renewcommand{\thetable}{\thelecnum.\arabic{table}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{lecnum}{#1}
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf  中国传统官僚政治制度
+						\hfill 2023 秋} }
+				\vspace{4mm}
+				\hbox to 6.28in { {\Large \hfill Lecture #1: #2  \hfill} }
+				\vspace{2mm}
+				\hbox to 6.28in { {\it Lecturer: #3 \hfill Scribe: #4} }
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{Lecture #1: #2}{Lecture #1: #2}
+	{\bf Disclaimer}: {\it These notes have not been subjected to the
+		usual scrutiny reserved for formal publications.  They may be distributed
+		outside this class only with the permission of the Instructor.}
+	\vspace*{4mm}
+}
+
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{SPACE-IN-INCHES}{CAPTION}
+\newcommand{\fig}[3]{
+	\vspace{#2}
+	\begin{center}
+		Figure \thelecnum.#1:~#3
+	\end{center}
+}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}[lecnum]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{定理}
+\newtheorem{claim}[theorem]{观点}
+\newtheorem{corollary}[theorem]{命题}
+\newtheorem{definition}[theorem]{定义}
+\newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\begin{document}
+	%FILL IN THE RIGHT INFO.
+	%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+	\lecture{3}{宗室、外戚与宦官}{叶炜}{方屹}
+	%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+	
+	% **** YOUR NOTES GO HERE:
+	
+	% Some general latex examples and examples making use of the
+	% macros follow.  
+	%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
+	%**** ARE NEVER READ BY ANYBODY.
+\section{引子}
+国家产生的一个标准：地缘关系取代血缘关系。这在中国不太明显。\\
+中国国家制度是不断演进、精致化的过程；前期的问题，在后期较少出现。
+
+\section{汉、晋宗室之乱}
+\subsection{西汉的``七国之乱''}
+秦末汉初的时代观点：分封制行之已久，郡县制行之未久，秦二世而亡；六国贵族渴望回复分封制。\\
+汉初分封格局：
+\begin{enumerate}
+  \item 汉初异性王分封于六国旧地，刘邦占据秦地；
+  \item 翦除异性王，分封宗室，严格限制战略物资从关中流入关东；
+    \begin{itemize}
+      \item 地域：诸侯国占39/54郡
+      \item 人口：诸侯国近直辖地一倍
+      \item 诸侯国内：自制吏，得赋敛，自拟法令，比于天子
+    \end{itemize}
+\end{enumerate}
+对策：
+\begin{itemize}
+  \item 贾谊-汉文帝：众建诸侯而少其力
+  \item 晁错-汉景帝：削藩与吴楚``七国之乱''
+\end{itemize}
+王国问题的解决：
+\begin{itemize}
+  \item 汉景帝五年（BC152）诏书：``诸侯王不得复治国，天子为治吏''
+  \item 汉武帝：推恩令、左官律、附议法。
+\end{itemize}
+李开元《汉帝国的建立与刘邦集团》``汉初之六十余年间，其历史状态具有相当的独特性，而此种独特性，又在很大程度上是战国末年以及秦楚汉间历史状态的延续''\\
+陈苏镇《<春秋>与``汉道''》：汉初不能承秦之制（政治上统一，文化上未统一，秦地用秦政，六国旧地仍用旧法），汉初灭异性王及削弱同姓王的过程，也是承秦立汉的继续，这一过程完成之际秦制才完成。
+\subsection{西晋``八王之乱''}
+\subsubsection{西晋的分封与宗王出镇}
+西晋初年的时代观点：魏、晋能代汉、魏，是因为宗王没有拱卫皇权。\\
+封宗室27王，王国力量不强。\\
+宗王出镇：宗王担任都督（军区司令，控制州）\\
+宗室出现问题：皇权强，但是皇帝本人暗弱\\
+``八王之乱''：宫廷政变$\rightarrow$八王之乱
+\subsubsection{南北朝的宗王政治}
+南朝：利用宗室的同时，杀戮、严防宗室；说明在历史的早期，对宗室的管理没有制度化\\
+北朝：宗室、贵族拱卫皇权，皇帝重用宗室、贵族
+
+\section{两汉外戚专权}
+\subsection{西汉的外戚专权}
+\begin{definition}
+  外戚：皇帝的母族和妻族。广义也指皇帝的姊妹。
+\end{definition}
+外戚专权的模式：皇权重而皇帝暗弱
+\subsection{东汉外戚宦官的轮流专政}
+东汉皇帝即位年龄小、寿命不长、多由外藩入继\\
+有时宦官外戚联手\\
+赵翼``两汉以外戚辅政，国家既受其祸，而外戚之受祸，亦莫如两汉者''
+
+\section{汉、唐、明宦官之乱}
+\subsection{唐}
+《资治通鉴》``宦官之祸，始于明皇，盛于肃、代，成于德宗，极于昭宗''
+\begin{enumerate}
+  \item 明皇时宦官开始掌权
+  \item 肃、代时宦官凭借信任掌握禁军
+  \item 德宗时设置左右神策护军中尉，以宦官担任。宦官掌禁军成为定制。
+  \item 昭宗被宦官逼宫
+\end{enumerate}
+\begin{claim}
+  唐代宦官专权的制度基础————宦官专兵
+\end{claim}
+陆扬《清理文化与唐帝国》``唐朝后期宦官有权废立君主的看法是一种迷思或错觉……在唐后期，宦官领导层真正具有影响力的只是对既定的或者获得相当共识的合法继承人的支持''\\
+唐后期的皇帝为何重用宦官？
+\begin{itemize}
+  \item 安史之乱使得皇帝怀疑大臣。
+  \item 宦官是刑余之人，不可能取代皇帝。
+  \item 内诸司使与皇权的延伸。唐长孺《唐代的内诸司使及其演变》``具有一个由宦官指挥的内诸司使行政系统，与外朝对立''
+\end{itemize}
+
+\subsection{明}
+宦官规模庞大（十二监二十四衙门），掌握特务机关。北京智化寺，王振祠，明代佛院。北京法海寺庙，明朝最好的壁画。\\
+票拟、批红：明朝皇帝怠政懒政，对自身角色不认同，批红权旁落到司礼监。\\
+明代皇帝制度比较完善，宦官可以乱政，不能威胁皇权。
+
+\section{对宗室、外戚、宦官权力的限制}
+\begin{claim}
+  《朱子语类》``权重处便有弊''。
+\end{claim}
+\subsection{对宗室权力的限制}
+\begin{enumerate}
+  \item 西汉：
+  \item 唐朝：在制度上使宗室远离政治。
+    \begin{itemize}
+      \item 居官而不掌职位
+      \item 享税而不亲自到地方
+    \end{itemize}
+  \item 宋朝：
+    \begin{itemize}
+      \item 限制宗室参加科举
+      \item 宗室不得授予地方官
+      \item 宗室不得统帅军队
+      \item 宗室不得担任宰相
+    \end{itemize}
+  \item 明朝
+    \begin{itemize}
+      \item 政治上管束严格
+      \item 经济上优待太重。1615年发放给皇族的薪俸是每年所受田赋的$143\%$（罗友枝《清代宫廷社会史》）。
+    \end{itemize}
+  \item 清朝
+    \begin{itemize}
+      \item 在政治经济方面限制宗室
+    \end{itemize}
+\end{enumerate}
+\subsection{对外戚权力的限制}
+\begin{enumerate}
+  \item 北魏``子贵母死''之制。出现在拓跋部向文明攀登的一个特定阶段，符合拓跋部上升至国家的需要（田余庆《拓跋史探》）
+  \item 宋朝``崇爵厚禄，不畀事权''
+  \item 明朝。有明一代，外戚最为孱弱。
+    \begin{itemize}
+      \item 制度、教育，《女戒》《外戚事鉴》《祖训录》
+      \item 文官群体对外戚的监督与裁抑
+    \end{itemize}
+  \item 清朝。既重用，又严防，严防为主。
+\end{enumerate}
+\subsection{对宦官权力的限制}
+清朝的敬事房和内务府。以包衣（满贵族之家奴）管理宦官。\\
+交泰殿铁牌。\\
+罗友枝《最后的皇族————清代宫廷社会史》：官僚政治与兄弟同盟结合，将包衣引入宫廷管理体系
+\section{总结}
+
+\end{document}
+
+
+
+
+

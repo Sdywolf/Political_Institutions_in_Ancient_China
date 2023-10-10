@@ -1,0 +1,188 @@
+%
+% This is the LaTeX template file for lecture notes for CS294-8,
+% Computational Biology for Computer Scientists.  When preparing 
+% LaTeX notes for this class, please use this template.
+%
+% To familiarize yourself with this template, the body contains
+% some examples of its use.  Look them over.  Then you can
+% run LaTeX on this file.  After you have LaTeXed this file then
+% you can look over the result either by printing it out with
+% dvips or using xdvi.
+%
+% This template is based on the template for Prof. Sinclair's CS 270.
+
+\documentclass[twoside]{article}
+
+\usepackage{ctex,hyperref}% 输出汉字
+
+%\usepackage{graphics}
+%\setlength{\oddsidemargin}{0.25 in}
+%\setlength{\evensidemargin}{-0.25 in}
+%\setlength{\topmargin}{-0.6 in}
+%\setlength{\textwidth}{6.5 in}
+%\setlength{\textheight}{8.5 in}
+%\setlength{\headsep}{0.75 in}
+%\setlength{\parindent}{0 in}
+%\setlength{\parskip}{0.1 in}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\thelecnum-\arabic{page}}
+\renewcommand{\thesection}{\thelecnum.\arabic{section}}
+\renewcommand{\theequation}{\thelecnum.\arabic{equation}}
+\renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
+\renewcommand{\thetable}{\thelecnum.\arabic{table}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{lecnum}{#1}
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf  中国传统官僚政治制度
+						\hfill 2023 秋} }
+				\vspace{4mm}
+				\hbox to 6.28in { {\Large \hfill Lecture #1: #2  \hfill} }
+				\vspace{2mm}
+				\hbox to 6.28in { {\it Lecturer: #3 \hfill Scribe: #4} }
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{Lecture #1: #2}{Lecture #1: #2}
+	{\bf Disclaimer}: {\it These notes have not been subjected to the
+		usual scrutiny reserved for formal publications.  They may be distributed
+		outside this class only with the permission of the Instructor.}
+	\vspace*{4mm}
+}
+
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{SPACE-IN-INCHES}{CAPTION}
+\newcommand{\fig}[3]{
+	\vspace{#2}
+	\begin{center}
+		Figure \thelecnum.#1:~#3
+	\end{center}
+}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}[lecnum]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\begin{document}
+	%FILL IN THE RIGHT INFO.
+	%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+	\lecture{2}{主独制于天下而无所制的皇帝制度}{阎步克}{方屹}
+	%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+	
+	% **** YOUR NOTES GO HERE:
+	
+	% Some general latex examples and examples making use of the
+	% macros follow.  
+	%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
+	%**** ARE NEVER READ BY ANYBODY.
+\section{中国专制主义问题}
+中国政治制度的连续性————五等爵、皇帝制度\\
+\section{尊君卑臣}
+\subsection{尊君}
+\subsubsection{犬马之心、诚惶诚恐、顿首顿首、死罪死罪}
+\subsubsection{泽及草木}
+斯大林、马克思：``农民是专制主义的支持者''\\
+《尚书泰誓》``抚我则后，虐我则仇''。《孟子》``君之视臣如土芥，则臣视君如寇雠''\\
+\subsubsection{荒唐诏令}
+\subsection{奴才与臣妾}
+臣-目（臣是竖目之形，奴隶监工）；满清武官与旗人近臣称``奴才''\\
+《布莱克维尔政治学百科全书》``专制：一种统治者和被统治者是主奴关系的统治形式。''\\
+妾妇意识：最早应该是屈原《离骚》\\
+游国恩《楚辞女性中心说》、叶嘉莹``后来的诗人文人，就常常喜欢用怨女思妇的感情，……''\\
+孟子：``无违夫、子，以顺为正者，妾妇之道也。富贵不能淫，贫贱不能移，威武不能屈，此之谓大丈夫。''\\
+战国读书人的``师友臣''理论。\\
+\section{奉天承运}
+\subsection{强者为王}
+与动物没什么分别
+\subsection{君权天授}
+商时可能产生，周代特别清晰。\\
+\subsection{五德终始}
+君权天授思想的精致化\\
+汉武帝时，儒生为了改制的需要，承认秦为水德，认为汉为土德。\\
+王莽将相克改为相生，改汉为火德，新朝占据最好的土德。\\
+魏晋南北朝时，同民族更代都采用禅让制，使用五德相生。\\
+宋明清时，政治理性化，不再强调五德。
+\subsection{天人感应}
+墨子``天志''；汉儒``灾异说''，以此形成对皇帝的制约。\\
+汉代儒学高度神学化。\\
+在历史早期，以神权压皇权的努力多少有点效果。历代皇帝罪己诏供384份，因灾异而下者最多，汉代最多。\\
+唐朝法定符瑞繁多，法定灾异找不到。\\
+\subsection{王权与教权}
+东晋慧远``沙门不敬王者论''。东晋道安``不依国主，则法事难立''。东晋皇权衰落，佛教尝试争夺政治权力。\\
+三武一宗法难。\\
+王朝管理宗教团体的制度。\\
+孟德斯鸠《论法的精神》``僧侣权力对于共和国是危险的，对于君主国却是适当的''
+\section{为民父母}
+\subsection{家长主义}
+法律家长主义：出于善意动机，不顾其自愿与否，限制其选择自由。\\
+经济家长主义：公有制经济下被认为存在家长主义。\\
+家长式专制：中国皇帝犹如严父，基于家长政治的原则，臣民都被看做还处在幼稚状态。他忽视了中国皇帝家长主义中母爱的一面（父权和母爱的结合-阎步克）。\\
+为民父母，爱民如子；移孝作忠 ，家国同构。举孝廉。\\
+父爱：政府承担父爱，子民可以要求父爱。父权：子民的无条件服从义务，父家长式的支配与干预。\\
+\subsection{中古忠孝先后论}
+《礼记》：门内之政恩掩义，门外之政义断恩。君重亲情，以义断恩也。\\
+清华简《六德》：为父绝君，不为君绝父。先秦的观念。\\
+唐长孺：自尽以后，门阀制度确立，``亲先于君，孝先于忠''的观念得以形成。\\
+李绍章《中华人民共和国感谢法》\\
+三国志《邴原别传》``父也''。\\
+密尔《论自由》``自决本身是最好的''。康德``父权政治是可能的最大的专制''。托克维尔``它寻求让他们永远不要长大成人''。严复``逢仁爱国家，以父母斯民自任，西民则以如是之政府，为真夺其自由''。\\
+\section{万邦之主}
+\subsection{五服图与天子玺}
+皇帝三玺对内，天子三玺对外。\\
+\subsection{册封与朝贡}
+茅海建《天朝的崩溃》评价清钦差大臣琦善照会义律``这完全是一派天朝的语言''。\\
+\section{走向共和，专制的终结}
+\subsection{华盛顿的传奇}
+将华盛顿``不僭位号，不传子孙''比作尧舜。\\
+\subsection{辛亥革命}
+社会革命、民族革命。\\
+二十世纪中国最伟大的政治事件。\\
+清帝退位诏书，是一篇了不起的文献。\\
+金冲及``在1912年，中国建立民主共和制度的时候，全世界实行民主制度的只有美国和法国''。\\
+``中国社会文化有两个30年，废除帝制之后30年，改革开放之后30年。''————阎步克。\\
+葛剑雄《人口与中国的现代化》。\\
+\subsection{袁世凯帝制自为}
+\subsection{当代称帝闹剧}
+皇权统治思想和某些机制，实际上是保存在社会躯体的骨髓里面。————田余庆。
+\end{document}
+
+
+
+
+
