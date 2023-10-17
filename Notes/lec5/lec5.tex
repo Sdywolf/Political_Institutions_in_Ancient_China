@@ -1,0 +1,259 @@
+%
+% This is the LaTeX template file for lecture notes for CS294-8,
+% Computational Biology for Computer Scientists.  When preparing 
+% LaTeX notes for this class, please use this template.
+%
+% To familiarize yourself with this template, the body contains
+% some examples of its use.  Look them over.  Then you can
+% run LaTeX on this file.  After you have LaTeXed this file then
+% you can look over the result either by printing it out with
+% dvips or using xdvi.
+%
+% This template is based on the template for Prof. Sinclair's CS 270.
+
+\documentclass[twoside]{article}
+
+\usepackage{ctex,hyperref}% 输出汉字
+
+%\usepackage{graphics}
+%\setlength{\oddsidemargin}{0.25 in}
+%\setlength{\evensidemargin}{-0.25 in}
+%\setlength{\topmargin}{-0.6 in}
+%\setlength{\textwidth}{6.5 in}
+%\setlength{\textheight}{8.5 in}
+%\setlength{\headsep}{0.75 in}
+%\setlength{\parindent}{0 in}
+%\setlength{\parskip}{0.1 in}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\thelecnum-\arabic{page}}
+\renewcommand{\thesection}{\thelecnum.\arabic{section}}
+\renewcommand{\theequation}{\thelecnum.\arabic{equation}}
+\renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
+\renewcommand{\thetable}{\thelecnum.\arabic{table}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{lecnum}{#1}
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf  中国传统官僚政治制度
+						\hfill 2023 秋} }
+				\vspace{4mm}
+				\hbox to 6.28in { {\Large \hfill Lecture #1: #2  \hfill} }
+				\vspace{2mm}
+				\hbox to 6.28in { {\it Lecturer: #3 \hfill Scribe: #4} }
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{Lecture #1: #2}{Lecture #1: #2}
+	{\bf Disclaimer}: {\it These notes have not been subjected to the
+		usual scrutiny reserved for formal publications.  They may be distributed
+		outside this class only with the permission of the Instructor.}
+	\vspace*{4mm}
+}
+
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{SPACE-IN-INCHES}{CAPTION}
+\newcommand{\fig}[3]{
+	\vspace{#2}
+	\begin{center}
+		Figure \thelecnum.#1:~#3
+	\end{center}
+}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}[lecnum]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{定理}
+\newtheorem{claim}[theorem]{观点}
+\newtheorem{corollary}[theorem]{命题}
+\newtheorem{definition}[theorem]{定义}
+\newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\begin{document}
+	%FILL IN THE RIGHT INFO.
+	%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+	\lecture{5}{平之如水：法律制度和法律精神}{阎步克}{方屹}
+	%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+	
+	% **** YOUR NOTES GO HERE:
+	
+	% Some general latex examples and examples making use of the
+	% macros follow.  
+	%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
+	%**** ARE NEVER READ BY ANYBODY.
+\section{引言}
+法字据说象征``平之如水''\\
+\subsection{什么是法律？}
+\begin{definition}
+    应然：用以维护权利、寻求正义的一套规范与程序\\
+    实然：由国家制定、并以国家强制力保证实施的，反映统治阶级意志的规范体系。法律是国家的统治工具。
+\end{definition} 
+\begin{claim}
+    实证法学派：\\
+    自然法学派：\\
+    历史法学派：
+\end{claim}
+孟德斯鸠：倘若一个国家的法律适用于另一个国家，那是罕见的巧合。（``英式法律在香港，陪审团制度在日本，都相当成功''）
+\subsection{中国传统法制}
+	中国传统法制的特点：
+	\begin{enumerate}
+		\item 皇权高于法律。【对比】``王在法下''
+		\item 理性地寻求司法正义。神秘主义色彩较淡（既是中国法制的特殊性，也是中国文化的特殊性）。【对比】神判法
+		\item 发达的法律体系，以法治国。
+		\item 司法行政部分、法律行政化。``官僚制的法''
+		\item ``礼''高于法，视法为刑律
+		\item 特权与腐败造成有法不依
+	\end{enumerate}
+	中国传统法的象征：獬；西方：女神
+	\begin{claim}
+		\begin{enumerate}
+		\item 法治源于英国，``王在法下''，Rex-Lex$\rightarrow$Lex-Rex；
+		\item 美国，政府在法律之下；
+		\item 国家法制主义：既非传统人治，也非现代法治。法律用作社会控制工具。
+		\item 於兴中《``法治''是否仍然可以作为一个有效的分析概念》
+		\end{enumerate}
+	\end{claim}
+\subsection{概念：法系}
+
+\section{从五刑到秦律}
+\subsection{早期国家的法律}
+\subsubsection{法令起源：因乱作刑}
+马克思恩格斯对国家的定义：
+\begin{enumerate}
+	\item 按照地域编制国民。国家行政力
+	\item 公共权力。军队、监狱及其他强制机关
+\end{enumerate}
+殷商，羑里，据说曾经关押周文王，有演易亭。
+\subsubsection{五刑：以刑统罪}
+五刑特点：
+\begin{enumerate}
+	\item 墨劓剕宫大辟《尚书吕刑》，以刑统罪。现代法典通常以罪统刑。
+	\item 是一个肉刑体系。肉刑，给人体造成永久性伤害、使人体残缺不全的刑罚。
+\end{enumerate}
+``中国早期的刑罚往往跟烹调有关''——某历史学博士生。``中国早期政治制度和饮食有关''，《酒之爵与人之爵》\\
+\subsubsection{劳役刑·礼与刑}
+特点
+\begin{enumerate}
+	\item 劳役刑的发达
+	\item 礼刑之等级性。刑不上大夫，``刑''特指肉刑。
+\end{enumerate}
+\subsubsection{法律与文化精神}
+西方法律象征：报应女神，代表无情的正义；正义女神，天平（天平被中国所接受，各大法学院系、中国人民法院）\\
+\subsubsection{理性地寻求公平正义}
+\begin{enumerate}
+	\item 多数民族有``神判法''（ordeal），中国只留下一个獬豸（独角神羊）传说。
+	\item 瞿同祖：中国有史以来，就以刑讯获得口供，不依赖神判法了
+	\item Robson：神判法是普遍的习惯，世界很少有国家不曾使用。唯一的例外是中国
+\end{enumerate}
+``法：刑也，平之如水，从水，所以触不直者去之，从廌去。''许慎《说文解字》\\
+獬豸元素在中国各大院校、法院中常用。\\
+``北大历史系的logo是我设计的''\\
+``我''所看到的唯一一例神判法案例在《墨子明鬼》，齐庄君判二臣之罪。\\
+\paragraph*{欧洲}神明裁判，13世纪才废除，在社会早期也有其意义。\\
+\paragraph*{少数民族地区}在中国少数民族地区，神判也被广泛使用。但是，在汉族地区，如瞿同祖所说，在正规史料中看不到神判。
+\subsection{从《法经》到秦律}
+\textit{公开发取代秘密法，成文法取代习惯法}
+\subsubsection{法经：中华法律之祖}
+\begin{enumerate}
+	\item 郑国子产铸刑书，前536年。叔向：昔先王议事以制（请对此予以足够重视。说明通过贵族会议来决定判决很早就出现了），不为刑辟，惧民之有争心也。民知有辟，则不忌于上。
+	\item 晋国铸刑鼎，前513年。孔子：民在鼎矣，何以尊贵？
+	\item 李悝制《法经》六篇：盗、贼、囚、捕、杂、具
+	\item 商鞅制秦律：改法为律（有一些新的材料似乎与此相悖，但目前仍可成立）
+\end{enumerate}
+梅因《古代法》强调成文法的重要性；丹宁勋爵``正义不仅应该实现，而且应该以人们看得见的方式实现''。
+\subsubsection{秦律}
+湖北云梦睡虎地秦简，出土大量秦律文书。\\
+秦简中之法律答问：
+\begin{enumerate}
+	\item 父盗子，不为盗。今假父盗假子，何伦？当为盗。
+	\item 或斗，啮人？若颜，其大方一寸，深半寸，何论？比疻痏。（``当时一定有法医''）
+\end{enumerate}
+\section{帝制时代的法典}
+\subsection{不断趋繁的汉律}
+背景：汉武帝时期，国家机器高速运转，``后来又疯狂运转''。
+发展过程：
+\begin{enumerate}
+	\item 萧何《九章律》$\rightarrow$
+	\item 武帝：律令359章，大辟409条，1882事，死罪决事比（决事比，相似于判例）13472条。
+	\item 东汉：断罪所当用者，26272条，7732200余言，览者益难。
+\end{enumerate}
+``人治这个提法，我总觉得不符合中国古代的法治现实，中国古代不是法治，但也不是人治，中国古代皇帝是以法治国的。''\\
+\begin{enumerate}
+	\item 律：基本法典。
+	\item ``天子诏所增损，不在律上者为令''
+	\item 科：补充细则
+	\item 比：与判例法有可比性
+\end{enumerate}
+秦汉法律特点：
+\begin{enumerate}
+	\item 律令不分。律的庄重性更高，律令在性质上没有区别，仅仅在形式上有区别。
+	\item 礼律部分。《上计律》后世在令、《大乐律》后世在礼。
+\end{enumerate}
+盐铁论：律令尘蠹于栈椟，吏不能遍睹，而况于民乎。
+\subsection{从律令科比到律令格式}
+\subsubsection{魏晋之际，律令分途}
+``汉代文化高度繁荣，法学家写作了大量法学著作，而这些法学著作都有法律效力。''
+\begin{enumerate}
+	\item 魏：魏律，魏令
+	\item 晋：晋泰始律-刑律，晋令-政府组织法，晋故事-规章制度
+	\item 唐代：律令格式。
+\end{enumerate}
+\subsection{唐宋明清的法律}
+\subsubsection{唐律令}
+《唐律疏议》是中国现存最早的完整成文法典，是《永徽律》及《律疏》（长孙无忌为永徽律著疏，并有法律效力）之合称。\\
+\textit{律令制度向外辐射}
+\subsubsection{敕·例}
+\paragraph*{宋：敕令格式}
+《宋刑统》以敕令格式附律
+\paragraph*{明清律改以六部为纲}
+\paragraph*{宋明又有编例}
+例与时而变，适应社会随时变化的状况。\\
+明神宗以例附律。
+\paragraph*{清代律例}
+清代律和例有冲突，用例不用律。
+\subsection{中外对比}
+\begin{itemize}
+	\item 西欧中世纪，成文法实际上毫无用处，因为很少有人知道如何读写。每个小型封建领主，都有通过自己的法庭施行的法律。赞恩《法律的故事》
+	\item 欧洲划时代的加洛林法典，不但在时间上比唐律晚了九百多年，其发达程度也不及唐律。甚至和欧洲十九世纪的刑法典相比，唐律也毫不逊色。中田薰，仁井田升
+\end{itemize}
+中国法学成就最高的是刑法典，西欧是民法典。
+
+\section{刑罚体系的变迁}
+\section{礼治主义与家族主义}
+\section{等级主义与国家主义}
+\end{document}
+
+
+
+
+
