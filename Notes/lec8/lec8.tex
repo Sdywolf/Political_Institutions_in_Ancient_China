@@ -1,0 +1,175 @@
+%
+% This is the LaTeX template file for lecture notes for CS294-8,
+% Computational Biology for Computer Scientists.  When preparing 
+% LaTeX notes for this class, please use this template.
+%
+% To familiarize yourself with this template, the body contains
+% some examples of its use.  Look them over.  Then you can
+% run LaTeX on this file.  After you have LaTeXed this file then
+% you can look over the result either by printing it out with
+% dvips or using xdvi.
+%
+% This template is based on the template for Prof. Sinclair's CS 270.
+
+\documentclass[twoside]{article}
+
+\usepackage{ctex,hyperref}% 输出汉字
+
+%\usepackage{graphics}
+%\setlength{\oddsidemargin}{0.25 in}
+%\setlength{\evensidemargin}{-0.25 in}
+%\setlength{\topmargin}{-0.6 in}
+%\setlength{\textwidth}{6.5 in}
+%\setlength{\textheight}{8.5 in}
+%\setlength{\headsep}{0.75 in}
+%\setlength{\parindent}{0 in}
+%\setlength{\parskip}{0.1 in}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\thelecnum-\arabic{page}}
+\renewcommand{\thesection}{\thelecnum.\arabic{section}}
+\renewcommand{\theequation}{\thelecnum.\arabic{equation}}
+\renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
+\renewcommand{\thetable}{\thelecnum.\arabic{table}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{lecnum}{#1}
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf  中国传统官僚政治制度
+						\hfill 2023 秋} }
+				\vspace{4mm}
+				\hbox to 6.28in { {\Large \hfill Lecture #1: #2  \hfill} }
+				\vspace{2mm}
+				\hbox to 6.28in { {\it Lecturer: #3 \hfill Scribe: #4} }
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{Lecture #1: #2}{Lecture #1: #2}
+	{\bf Disclaimer}: {\it These notes have not been subjected to the
+		usual scrutiny reserved for formal publications.  They may be distributed
+		outside this class only with the permission of the Instructor.}
+	\vspace*{4mm}
+}
+
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{SPACE-IN-INCHES}{CAPTION}
+\newcommand{\fig}[3]{
+	\vspace{#2}
+	\begin{center}
+		Figure \thelecnum.#1:~#3
+	\end{center}
+}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}[lecnum]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{定理}
+\newtheorem{claim}[theorem]{观点}
+\newtheorem{corollary}[theorem]{命题}
+\newtheorem{definition}[theorem]{定义}
+\newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\begin{document}
+	%FILL IN THE RIGHT INFO.
+	%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+	\lecture{8}{士大夫的摇篮：官学}{阎步克}{方屹}
+	%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+	
+	% **** YOUR NOTES GO HERE:
+	
+	% Some general latex examples and examples making use of the
+	% macros follow.  
+	%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
+	%**** ARE NEVER READ BY ANYBODY.
+	
+\section{中外教育史}
+\begin{enumerate}
+    \item 洪堡：``最高理想，是每个人都只从他自身并且仅为他自己而发育成长。''新人文主义（或自然主义）的教育思想，以个性、发扬作为教育的最高目的。
+    \item 马克思：``每个人的自由发展是一切人自由发展的条件。''《共产党宣言》
+    \item 蔡元培：很可能收到洪堡思想的影响。《教育独立议》``教育就是帮助被教育的人，给他能发展自己的能力，完成它的人格''，``不是把被教育的人，造成一种特别器具，给抱有他种目的的人去应用的''。
+    \item 胡适：``民主的真意只是一种生活方式。''``承认人人个有价值，人人都应该可以自由发展的生活方式。''
+\end{enumerate}
+\section{古文明的宁馨儿}
+宁馨儿：魏晋南朝时，语词``宁馨儿''意为可爱的孩子。\\
+《孟子》``设为庠序学校以教育之……夏曰校，殷曰庠，周曰序''\\
+\begin{enumerate}
+    \item 殷商甲骨模糊暗示学校的存在：``丙子卜，贞，多子其徙（从``止''）学，版不冓大雨？''大意为，小孩上学，回来时会不会遇上大雨
+    \item 周朝：国子学。国子，贵族子弟，反映周代学校的贵族型。\\
+    大学、小学；辟雍、泮宫。人类学者解释，小孩集中学习、集中住宿，在学校周围挖一个水沟，围成半圆，防御猛兽，防止淘气的孩子跑出去。\\
+    天子之学，辟雍；诸侯之学，泮宫。
+    \begin{itemize}
+        \item 教育内容：六艺
+        \item 教育对象：国子、多子、胄子，反映教育的贵族型。
+    \end{itemize}
+\end{enumerate}
+\subsection{射御}
+\begin{enumerate}
+    \item 适应古代车战的需要，骑射成为贵族的必备技能。
+    \item 周代《静簋》：出现``司射学宫''，``学射''文字，说明周代存在学宫，且教授科目有``射''。\\
+    \item 殷商甲骨文出现``庠三百射''。
+    \item 孟子：序者射也。
+    \item 大射礼，乡射礼。
+\end{enumerate}
+\subsection{书数}
+书写与计算，属行政技能。\\
+教、学，字形象以手弄爻，爻是算筹。《尚书·舜典》``扑作教刑''。教，字形象以手持棍，监督学子学习。\\
+史官教书数：
+\begin{enumerate}
+    \item 史官编制立法，教算术；史官制作文书，教书写。
+    \item 史，（公务员），运用文书，从事公务的官职。汉初萧何草律：太史试学童，能讽书九千以上，乃得为史。又以六体字试之，课最者为尚书令史、御史令史。
+    \item 二年律令（张家山汉简二年律令，价值非常高，质量也很好）史律：史子年十七岁学。学三岁，诣大史、郡守试之，试以十五篇，讽书五千字以上，八体。大史诵课，取为县令史、尚书卒史。
+\end{enumerate}
+书写的教育由史官承担的其他证据：
+\begin{enumerate}
+    \item 《史籀》十五篇，周宣王太史作。《遤鼎》铭文：史留受王令书。
+    \item 《仓颉篇》，仓颉为黄帝史官。我们现在一般不认为黄帝时代有文字，但是历史记载如此。
+    \item 《博学篇》，作者胡母敬为亲太史令，是当时的官方教材。
+\end{enumerate}
+\subsection{礼乐}
+乐师主持礼乐教育。
+\begin{enumerate}
+    \item 《尚书》``舜命夔典乐、教胄子''。
+    \item 《礼记》商代学校称``瞽宗''。盲人从事教育，瞽一般担任乐师，从事礼乐讲唱的工作，古希腊就有盲人荷马留下《荷马史诗》。瞽宗就是祭祀先师的地方，瞽就是先师。
+    \item 《周礼》``大司乐掌学政''。
+    \item 《礼记》``乐正崇四术，立四教''
+    \item 《礼记》``问大夫之子长幼，长则曰`能从乐人之事矣'，幼则曰`能正于乐人，未能正于乐人'。''
+    \item 清代俞正燮：乐之外无所谓学。
+\end{enumerate}
+乐：包括音乐、诗歌、舞蹈。周礼中，乐师系统下是一个相当庞大的系统。\\
+未完待续……
+\end{document}
+
+
+
+
+
