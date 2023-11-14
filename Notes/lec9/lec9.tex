@@ -1,0 +1,268 @@
+%
+% This is the LaTeX template file for lecture notes for CS294-8,
+% Computational Biology for Computer Scientists.  When preparing 
+% LaTeX notes for this class, please use this template.
+%
+% To familiarize yourself with this template, the body contains
+% some examples of its use.  Look them over.  Then you can
+% run LaTeX on this file.  After you have LaTeXed this file then
+% you can look over the result either by printing it out with
+% dvips or using xdvi.
+%
+% This template is based on the template for Prof. Sinclair's CS 270.
+
+\documentclass[twoside]{article}
+
+\usepackage{ctex,hyperref}% 输出汉字
+
+%\usepackage{graphics}
+%\setlength{\oddsidemargin}{0.25 in}
+%\setlength{\evensidemargin}{-0.25 in}
+%\setlength{\topmargin}{-0.6 in}
+%\setlength{\textwidth}{6.5 in}
+%\setlength{\textheight}{8.5 in}
+%\setlength{\headsep}{0.75 in}
+%\setlength{\parindent}{0 in}
+%\setlength{\parskip}{0.1 in}
+
+%
+% The following commands set up the lecnum (lecture number)
+% counter and make various numbering schemes work relative
+% to the lecture number.
+%
+\newcounter{lecnum}
+\renewcommand{\thepage}{\thelecnum-\arabic{page}}
+\renewcommand{\thesection}{\thelecnum.\arabic{section}}
+\renewcommand{\theequation}{\thelecnum.\arabic{equation}}
+\renewcommand{\thefigure}{\thelecnum.\arabic{figure}}
+\renewcommand{\thetable}{\thelecnum.\arabic{table}}
+
+%
+% The following macro is used to generate the header.
+%
+\newcommand{\lecture}[4]{
+	\pagestyle{myheadings}
+	\thispagestyle{plain}
+	\newpage
+	\setcounter{lecnum}{#1}
+	\setcounter{page}{1}
+	\noindent
+	\begin{center}
+		\framebox{
+			\vbox{\vspace{2mm}
+				\hbox to 6.28in { {\bf  中国传统官僚政治制度
+						\hfill 2023 秋} }
+				\vspace{4mm}
+				\hbox to 6.28in { {\Large \hfill Lecture #1: #2  \hfill} }
+				\vspace{2mm}
+				\hbox to 6.28in { {\it Lecturer: #3 \hfill Scribe: #4} }
+				\vspace{2mm}}
+		}
+	\end{center}
+	\markboth{Lecture #1: #2}{Lecture #1: #2}
+	{\bf Disclaimer}: {\it These notes have not been subjected to the
+		usual scrutiny reserved for formal publications.  They may be distributed
+		outside this class only with the permission of the Instructor.}
+	\vspace*{4mm}
+}
+
+%
+% Convention for citations is authors' initials followed by the year.
+% For example, to cite a paper by Leighton and Maggs you would type
+% \cite{LM89}, and to cite a paper by Strassen you would type \cite{S69}.
+% (To avoid bibliography problems, for now we redefine the \cite command.)
+% Also commands that create a suitable format for the reference list.
+\renewcommand{\cite}[1]{[#1]}
+\def\beginrefs{\begin{list}%
+		{[\arabic{equation}]}{\usecounter{equation}
+			\setlength{\leftmargin}{2.0truecm}\setlength{\labelsep}{0.4truecm}%
+			\setlength{\labelwidth}{1.6truecm}}}
+	\def\endrefs{\end{list}}
+\def\bibentry#1{\item[\hbox{[#1]}]}
+
+%Use this command for a figure; it puts a figure in wherever you want it.
+%usage: \fig{NUMBER}{SPACE-IN-INCHES}{CAPTION}
+\newcommand{\fig}[3]{
+	\vspace{#2}
+	\begin{center}
+		Figure \thelecnum.#1:~#3
+	\end{center}
+}
+% Use these for theorems, lemmas, proofs, etc.
+\newtheorem{theorem}{Theorem}[lecnum]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{proposition}[theorem]{定理}
+\newtheorem{claim}[theorem]{观点}
+\newtheorem{corollary}[theorem]{命题}
+\newtheorem{definition}[theorem]{定义}
+\newenvironment{proof}{{\bf Proof:}}{\hfill\rule{2mm}{2mm}}
+
+% **** IF YOU WANT TO DEFINE ADDITIONAL MACROS FOR YOURSELF, PUT THEM HERE:
+
+\begin{document}
+	%FILL IN THE RIGHT INFO.
+	%\lecture{**LECTURE-NUMBER**}{**DATE**}{**LECTURER**}{**SCRIBE**}
+	\lecture{9}{从世卿世禄到选贤任能}{阎步克}{方屹}
+	%\footnotetext{These notes are partially based on those of Nigel Mansell.}
+	
+	% **** YOUR NOTES GO HERE:
+	
+	% Some general latex examples and examples making use of the
+	% macros follow.  
+	%**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
+	%**** ARE NEVER READ BY ANYBODY.
+	
+\section{引子}
+\subsection{历代政府规模}
+西汉末：户口5959万，正编官吏13万，为罗马帝国同期官数20倍，与美国1880年代相当。
+\subsection{选官制度的目的}
+选官制的两大目的：
+\begin{itemize}
+	\item 选拔人才承担行政
+	\item 安排身份分配利益。选官制度中的家族特权在帝制时代一直存在
+\end{itemize}
+古代的夸官风俗
+\subsection{选官制度变化的原因}
+``制度进化论''的观点是有道理的
+\begin{itemize}
+	\item 制度进步导致选官制度的变迁
+	\item 选官制度与政治体制相适应
+\end{itemize}
+\subsection{选官制度变化历程}
+皇权官权此消彼长。\\
+``历史会走回头路。要消除一个特殊利益集团，往往需要几十年上百年的时间。''
+\begin{enumerate}
+	\item 周（早期王国，贵族政治）：世卿世禄
+	\item 秦汉（中央集权的官僚帝国~，官僚政治）：任子|察举制
+	\item 魏晋南北朝（门阀政治）：九品中正制|察举制
+	\item 唐宋（官僚政治）：门荫恩庇|科举制
+	\item 明清（官僚政治）：官生、荫生|科举制
+\end{enumerate}
+\section{贵族政治的世卿世禄}
+\begin{itemize}
+	\item 世卿：儿子继承卿位。这一制度影响很大，``有人觉得历史分期需要一个标志性事件''，有人觉得三家分晋可以作为中国封建社会的开端，又有人把田氏代齐视为封建社会的开端。
+	\item 世禄：每个儿子都有官做，可以领俸禄。``一个都不能少''
+	\item 世官：官位父死子继。由于很多官职专业性极强，商代负责占卜的官、史官，往往父死子继。阴历、阳历之间的差，史官发明``十九年七闰''。如，司马迁家族在周宣王之后，世典周史。
+	贞人、史官作为世官在青铜器中可以找到丰富的证据。世官制也是中国人姓氏的来源之一，如司马、卜、史等众多姓氏，李的来源之一就是周代的法官名称。
+\end{itemize}
+\subsection{战国：选贤任能的开端}
+原因：
+\begin{enumerate}
+	\item 小型简单社会变为大型复杂社会的需要
+	\item 社会上出现大量士人，要求参政治国。举贤的传说大多是战国士人编造的，不要轻易信以为真，如伊尹举于庖，傅说举于版筑，太公由田野提拔。
+\end{enumerate}
+韩非：``明主之吏，宰相必起于州部，猛将必发于卒伍。''``这在当时，是杰出的思想。''
+
+\section{选贤任能：汉代察举}
+\subsection{察举创立}
+汉武帝元光元年（前134年）。``初令郡国举孝廉各一人''。劳干``中国学术史和政治史上最可纪念的一年''\\
+《察举制度变迁史稿》``作者是本人''``谈到察举制大家以阎老师为准，阎老师保证你不会错。''\\
+\begin{itemize}
+	\item 特科：皇帝认为需要某种特殊人才，不定期举行察举。有分科录取、专业原则的特点。
+		\begin{itemize}
+			\item 对策：贤良、方正、文学
+			\item 明经、明法、能治河者、勇猛知兵法者
+		\end{itemize}
+	\item 岁科：定期举办，更加制度化。郡太守举孝廉，州刺史举秀才（最初是特科，后来成为岁科。东汉为避讳改为茂才。避讳，汉代用国字的地方，先秦往往叫邦（《国风》$\leftarrow$《邦风》））
+\end{itemize}
+\subsection{特点分析}
+东汉孝廉，每年约二百余人$\rightarrow$进入郎署做郎中，宿卫宫廷$\rightarrow$令长丞尉
+\begin{itemize}
+	\item 郎官，郎$=$廊，即回廊。
+	\item 古制：做官前先给君主做侍卫。宦$\rightarrow$仕。宦，即侍从、侍卫。``这个制度的发现，阎老师做出了最大贡献''。《从爵本位到官本位》。
+	\item 少数民族政权仍然保留这样的制度。辽金郎君、元朝怯薛、清朝侍卫。
+	\item ``郎''后成为青年男子美称。医生大夫也叫``郎中''，``这个叫法的来由就有点超出我们的话题了''。
+\end{itemize}
+\subsubsection{察举制特点：推荐制}
+察举制：推荐制。依赖州郡长官举荐，不如科举考试严密客观。
+\begin{itemize}
+	\item 分科取人：贯彻了专业原则。科举制下，不分科取人。这样一个变迁意义何在，值得深思，``我敢说现在对这样一个议题的讨论，深度还是不够的''。
+	\item \textit{以德取人}：以``孝''选官，合于儒家``以孝治天下''。儒家认为，一个由善良的人组成的社会最美好；官员有表率作用，应该由；``家长主义''，现在也有人主张``保育式政体''；儒家认为``孝''是美德
+	中最高尚的。一个``孝''变态的例子，陈蕃治罪赵宣之事。
+	\item 孝廉也重视行政能力。对德行的要求明显偏高，但是对行政能力也有要求。光武帝：州郡举茂才孝廉``务授试以职''，察举失误的举主要承担责任。强化了\textit{以能取人}。
+	到东汉后期，试用期长达十年，县官有四十岁左右的人来担任，``是有一定道理的''。
+	\item 汉顺帝阳嘉年间，举廉行考试。\textit{以文取人}，向科举制演变。过渡形态，中间环节。
+\end{itemize}
+\begin{itemize}
+	\item 州郡举荐越来越轻，中央考试越来越重。
+	\item 北朝后期州郡考试萌芽（地方官有义务举荐人才考试，而在举荐时也用考试来检验人才水平）。唐州县实行考试。
+\end{itemize}
+
+\section{任子、九品中正制与门荫}
+\subsection{任子与内侍}
+《任子令》：``吏二千石以上，视事满三年，得任同产若子一人为郎。''
+苏武：少以父任。霍光：以霍去病同父异母弟，任为郎。\\
+``我的看法是，汉代官员的选官特权相对较小''
+\begin{itemize}
+	\item 二千石约为后代四品。范围不是太大。
+	\item 通常一家一人。范围也不是太大。
+	\item 郎官非官，前期无俸禄。``站岗是个挺辛苦的事。阎老师当年做过五年国防军，在中蒙边境上。''汉代郎官装备需要自备。从汉朝到清朝，郎官的选拔期限一直不确定。
+	\item 优先选拔孝廉郎。任子郎通常只任为丞尉。有许多重要职位，只能有孝廉郎担任，如御史台的御史，尚书台的尚书郎。
+\end{itemize}
+\subsection{九品官人法}
+九品中正制。魏文帝创立，朝官兼任中正，品评本地士人，每月月旦集会，依德才定九品，作为吏部任用根据，按表现品有升降。\\
+宫崎市定《九品官人法》：中正品与起家官品差四品。这个理论有明显缺陷，``我也写文章讨论过''，不过这个理论也有一定道理。\\
+察举：推荐制。科举：考试制。中正：评议制。\\
+``制度的实质只有在运行起来后才能看出来。''``上品无寒门，下品无势族''。这一制度实在运行的过程中，被扭曲为世家门阀制度的。
+\subsection{中古以贵役贱}
+王僧达``三年间便望宰相''，他的孙子王融``三十内望为公辅''。\\
+南朝沈约``周汉之道，以智役愚''``魏晋以来，以贵役贱''。``按劳分配，按需分配，按爹分配''\\
+\textit{``中国政治制度的许多核心秘密就隐藏在官僚特权里。''}
+\subsection{唐代门荫}
+``人类历史的苍凉之处，就在于制度的进步相当之慢（如果你是一个理想主义者，在阅读人类历史时就会有这种感觉）。想要削弱一个特殊利益集团，往往需要十几年、几十年、甚至上百年。''
+\begin{enumerate}
+	\item 九品皆有特权。五品以上，门荫；六至九品：品子。三品以上，给七品左右的出身；四五品，给八品出身。
+	\item 不限一人。
+	\item 高者可及曾孙。
+	\item 科举不如恩荫优越。进士甲等，从九品上；进士乙等，从九品下。门荫最高正七品上。
+	\item 有唐登第者31000人，只占品官的16\%。（齐陈骏）
+\end{enumerate}
+\subsection{宋代恩荫}
+恩荫渠道繁多。恩荫制度规定明确，``依法搞特权''。
+\subsection{明清恩荫}
+\begin{enumerate}
+	\item 变为官生荫生形态。不再直接给官僚子弟官职，而是给一个到国子监太学念书的机会，虽然今天看也是特权，依然是一个进步。
+	\item 级别限制明显提高。
+	\item 一家限一人。
+	\item 入学有考试。
+	\item 要在国子监学习三年，考试毕业。
+	\item 地位不如科举。
+	\item 民生官生官民比非常大，官生比例极小。
+\end{enumerate}
+\textit{``中国政治制度的许多核心秘密就隐藏在官僚特权里。''}\\
+\textit{``明清的政治特点与秦汉类似。''}
+\section{科举考试：公平竞争}
+\subsection{唐代科举}
+投牒自进。唐武德五年：苟有才艺，无嫌自进。\\
+科举：王朝设科，士人自由投考，竞争性的差额考试。\\
+生徒经过学校考试，乡贡经过州县考试，科目考试与学校的关系密切起来了，由此，学校的教育培训和朝廷的选官逐渐对接起来了。\\
+分科取人，多时有一百多科。``为什么重视专业原则的分科取人之法逐渐衰弱了呢？''
+\subsection{宋代科举}
+诸科逐渐集中于进士科。\\
+出现殿试，成为三级考试制度。原因：
+\begin{enumerate}
+	\item 由于科举制的重要性，提高考试规格
+	\item 由于中央集权，官员在科举时，出现同门、拜师的关系，皇帝不满，使门生成为``天子门生''
+\end{enumerate}
+\subsubsection{特奏名}
+面向若干次不中的落榜生。15次改到6-10次。特奏名入仕者，约占科举入仕半数。\\
+《萍州可谈》朱彧：``特奏名陛试，有老生七十许岁，于试卷内书云：``臣老矣，不能为文也，伏愿陛下万岁万岁万万岁''既闻，上嘉其诚，特给初品官，食俸终其身。''\\
+一个过度竞争的社会可能也有问题。\\
+例：黄巢、洪秀全。
+\subsection{宋明清科举}
+选官制变化三大趋势：
+\begin{enumerate}
+	\item 从世禄到举荐，从举荐到考试
+	\item 日益与学校结合，至明清合一。明清时，只有官方学校的学生才能参加科举考试。
+	\item 诸科向进士一科集中。有利于简化制度、保障公正。适应历史后期的文化社会变化。宋朝学生有十七八万，明朝学生有50万以上，清代有100万以上，科举制规模越来越大。
+\end{enumerate}
+选拔专业人才vs.保障公平流动。但是，这两者之间很可能存在矛盾，有利于选拔专业人才的制度可能就不利于保障公平流动。\\
+``一个有流动的社会就有竞争，一个有竞争的社会就有活力，统治集团也得以吸收新鲜血液。''\\
+如何给底层以更多的机会，防止社会的分裂。\\
+历史后期的科举，社会竞争流动的游戏，故诸科合一。
+\end{document}
+
+
+
+
+
